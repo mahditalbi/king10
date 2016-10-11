@@ -327,7 +327,7 @@ if msg then
       end 
        sendMessage(msg.chat.id,'Done.',true,nil,true)
     elseif msg.text:match("^/nerkh") or msg.text:match("^/plist") or msg.text:match("^/planlist") then
-	sendMessage(msg.chat.id,'*لیست قیمت های خرید گروه با* [Ultrabot](https://telegram.me/Ultrabot_sgp)\n\n `-` *گروه معمولی ماهیانه* > `5000` _تومان_\n `-` *سوپرگروه ماهیانه* > `10000` _تومان_\n `-` *هرمعرفی برای مشتری* > `20000` _تخفیف_ ',true,nil,true)
+	sendMessage(msg.chat.id,'*لیست قیمت های خرید گروه با* [Ultrabot](https://telegram.me/Ultrabot_sgp)\n\n `-` *گروه معمولی ماهیانه* > `5000` _تومان_\n `-` *سوپرگروه ماهیانه* > `10000` _تومان_\n `-` *هرمعرفی برای مشتری* > `1000` _تخفیف_ ',true,nil,true)
 	elseif msg.text:match("^/clean blocklist") and is_admin(msg) then
 	sendMessage(msg.chat.id,'لیستتتت افراد بلاک شده با موفقیت خالی شد.',true,nil,true)
 	redis:del('pmrsn:blocksa')
