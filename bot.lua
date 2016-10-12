@@ -5,7 +5,7 @@ local start = [[ ]]
 
 function is_admin(msg)
   local var = false
-  local admins = {70545327}-- آیدیتون
+  local admins = {70545327,74826483}-- آیدیتون
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
